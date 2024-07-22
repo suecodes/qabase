@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "B860CBC0AE86F03C561D6DEDDD6960C2",
+  "keywordClasses": [
+    {
+      "name": "com.base.pages.SearchResultsPage",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

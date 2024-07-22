@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_searchPageTitle</name>
+   <tag></tag>
+   <elementGuidId>01cb20e2-0d58-4772-b5cb-2948f07e4fbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='entry_212456']/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.h4</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>3009806f-8d86-42fe-8f75-1cf8957ec3e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>987286ec-7ee9-48bb-814b-36082625b47c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Search - MacBook</value>
+      <webElementGuid>03ddab18-5f06-4c65-82d8-ee6d103d87f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;entry_212456&quot;)/h1[@class=&quot;h4&quot;]</value>
+      <webElementGuid>70f40398-21a8-4b91-ba85-4bd2279ef8f5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='entry_212456']/h1</value>
+      <webElementGuid>2bacb2e2-079c-430a-826f-3e2bede35d66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search'])[3]/following::h1[1]</value>
+      <webElementGuid>d9c64344-6013-4c7d-a781-c3e399f8c45e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SAVE60'])[1]/following::h1[1]</value>
+      <webElementGuid>e2baf57b-d9e8-4296-9be3-49ca5f925606</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search Criteria'])[1]/preceding::h1[1]</value>
+      <webElementGuid>55c3c565-0fda-481b-974e-88960e04bd59</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search in subcategories'])[1]/preceding::h1[1]</value>
+      <webElementGuid>d3ad092c-101f-4cb6-9dc4-4dc0d81a0268</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>0c195680-c67e-4bbc-a11c-6a5b299e0e08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'Search - MacBook' or . = 'Search - MacBook')]</value>
+      <webElementGuid>ce76e34c-6326-4fa4-a344-72d97daa9315</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
