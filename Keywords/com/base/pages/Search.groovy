@@ -1,4 +1,4 @@
-package com.base.steps
+package com.base.pages
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -7,7 +7,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
@@ -15,8 +15,8 @@ import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testdata.TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
 
@@ -37,34 +37,20 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
-import cucumber.api.java.en.And
-import cucumber.api.java.en.Given
-import cucumber.api.java.en.Then
-import cucumber.api.java.en.When
+import com.base.utils.WebElementUtils
 
-import com.base.pages.Home
-import com.base.pages.Search
-
-class searchSteps {
-
-	String HOME_PAGE_MESSAGE = "This is a dummy website for Web Automation Testing"
-
-	Home home = new Home()
-	Search search = new Search()
-
-	@Given("the user is on the home page")
-	def navigateToHomePage(){
-		WebUI.navigateToUrl(GlobalVariable.URL)
-		WebUI.verifyMatch(home.getHomePageMessage(), HOME_PAGE_MESSAGE, false)
-	}
-
-	@When("the user enters 'MacBook' into the search bar")
-	def enterSearchTerm(String value){
-		search.setSearchValue(value)
-	}
-
-	@And("clicks the Search button")
+class Search {
+	
+	WebElementUtils webElementUtils = new WebElementUtils()
+	
+	private TestObject buttonSearch = findTestObject("Object Repository/Page_Home/button_Search")
+	private TestObject inputSearchValue = findTestObject("Object Repository/Page_Home/input_searchValue")
+	
 	def clickSearchButton() {
-		search.clickSearchButton()
+		webElementUtils.clickElement(buttonSearch)
+	}
+
+	def setSearchValue(String value) {
+		webElementUtils.setText(inputSearchValue, value)
 	}
 }

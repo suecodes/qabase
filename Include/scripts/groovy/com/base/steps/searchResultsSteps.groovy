@@ -42,18 +42,18 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import com.base.pages.SearchResultsPage
+import com.base.pages.SearchResults
 
 class searchResultsSteps {
 
 	String PAGE_TITLE = "Search - MacBook"
 	String PAGE_COUNT_RESULT_LABEL = "Showing 1 to 6 of 6 (1 Pages)"
 
-	SearchResultsPage searchResultsPage = new SearchResultsPage()
+	SearchResults searchResults = new SearchResults()
 
-	@Then("I should see a list of available products, prices, and features displayed on the search results page")
+	@Then("the results should contain products related to 'MacBook'")
 	def verifyProductsMatch(){
-		WebUI.verifyMatch(searchResultsPage.getPageTitle(), PAGE_TITLE, false)
-		WebUI.verifyMatch(searchResultsPage.getPageCountResult(), PAGE_COUNT_RESULT_LABEL, false)
+		WebUI.verifyMatch(searchResults.getPageTitle(), PAGE_TITLE, false)
+		WebUI.verifyMatch(searchResults.getPageCountResult(), PAGE_COUNT_RESULT_LABEL, false)
 	}
 }

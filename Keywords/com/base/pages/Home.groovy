@@ -22,21 +22,11 @@ import internal.GlobalVariable
 
 import com.base.utils.WebElementUtils
 
-class HomePage {
+class Home {
 
 	WebElementUtils webElementUtils = new WebElementUtils()
-	
-	private TestObject buttonSearch = findTestObject("Object Repository/Page_Home/button_Search")
-	private TestObject inputSearchValue = findTestObject("Object Repository/Page_Home/input_searchValue")
+
 	private TestObject labelUserMessage = findTestObject("Object Repository/Page_Home/label_userMessage")
-
-	def clickSearchButton() {
-		webElementUtils.clickElement(buttonSearch)
-	}
-
-	def setSearchValue(String value) {
-		webElementUtils.setText(inputSearchValue, value)
-	}
 
 	def getHomePageMessage() {
 		webElementUtils.getText(labelUserMessage)

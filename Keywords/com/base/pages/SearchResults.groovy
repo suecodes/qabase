@@ -22,19 +22,18 @@ import internal.GlobalVariable
 
 import com.base.utils.WebElementUtils
 
-public class SearchResultsPage {
+public class SearchResults {
 
 	WebElementUtils webElementUtils = new WebElementUtils()
-	
+
 	private TestObject labelPageTitle = findTestObject("Object Repository/Page_SearchResults/label_searchPageTitle")
 	private TestObject labelResultsCount = findTestObject("Object Repository/Page_SearchResults/label_resultsCount")
-	
+
 	def getPageTitle() {
 		webElementUtils.getText(labelPageTitle)
 	}
-	
+
 	def getPageCountResult() {
 		webElementUtils.getText(labelResultsCount)
 	}
-	
 }
